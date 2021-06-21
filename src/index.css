@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.video-js {
+  width: 100% !important;
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.bg-dots-white {
+  background: linear-gradient(90deg, white 17px, transparent 1%) center,
+    linear-gradient(white 17px, transparent 1%) center, #e5e7eb;
+  background-size: 22px 22px;
+}
+
+.bg-dots-dark {
+  background: linear-gradient(90deg, #21282f 17px, transparent 1%) center,
+    linear-gradient(#21282f 17px, transparent 1%) center, rgba(229, 231, 235, 0.2);
+  background-size: 22px 22px;
+}
+
+.bg-dots-light {
+  background: linear-gradient(90deg, #f9fafb 7.98px, transparent 1%) center,
+    linear-gradient(#f9fafb 7.98px, transparent 1%) center, #e5e7eb;
+  background-size: 10.33px 10.33px;
+}
+
+.text-tiny {
+  font-size: 0.6875rem;
+}
+
+@media (min-width: 1300px) {
+  .xl-block {
+    display: block !important;
+  }
+}
+
+.video-info p {
+  line-height: 1.5;
+  margin-bottom: 1.875rem;
+}
+
+@media (max-width: 640px) {
+  body .contentpage {
+    margin-top: calc(56% + 50px) !important;
+  }
+  body .frontpage {
+    margin-top: 50px !important;
+  }
+}
+
+.bg-nav {
+  background-color: #191f27;
+}
+
+.button {
+  background-color: #307fe2;
+}
+
+.button:hover {
+  background-color: #1766c9;
+}
+
+.video-tag {
+  background-color: #e4fffa;
+  color: #0b967c;
+}
+
+.text-pale-sky {
+  color: #6b7280;
+}
+
+.contentDescription.prose,
+.contentDescription.prose * {
+  color: white;
+}
+
+/* transitions */
+
+.modal-transition-enter {
+}
+
+.modal-transition-enter-active {
+}
+
+.modal-transition-exit {
+}
+
+.modal-transition-exit-active {
+}
+
+.modal-transition-appear {
+}
+
+.modal-transition-appear-active {
+}
+
+.fade-enter {
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 100ms ease-in;
+}
+
+/* override lib */
+div.text-editor {
+  font-family: inherit;
+}
+
+.collectionpage .leading-5 a {
+  text-decoration: underline;
+}

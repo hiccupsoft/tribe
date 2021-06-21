@@ -1,0 +1,95 @@
+/*@tailwind base;
+@tailwind components;
+@tailwind utilities;*/
+
+/* purgecss start ignore */
+@tailwind base;
+
+.custom .str-chat__list {
+  @apply px-5;
+}
+.custom .str-chat__date-separator-date {
+  @apply text-shark-100;
+}
+
+.big-video-box {
+  min-height: 210px;
+}
+
+.chat-user-avatar {
+  height: 32px;
+  width: 32px;
+}
+
+.stuck-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+}
+
+.custom .str-chat__input {
+  @apply bg-gray-800;
+}
+
+.custom .str-chat__textarea__textarea {
+  @apply bg-gray-800 text-0.9375 leading-4.5 text-white opacity-50 py-3;
+}
+
+@screen xl {
+  .chat-user-avatar {
+    height: 32px !important;
+    width: 32px !important;
+  }
+  .custom .str-chat__textarea__textarea {
+    @apply text-0.9375 leading-4.5 py-3 !important;
+  }
+}
+
+@screen lg {
+  .custom .str-chat__list {
+    @apply pl-0 pr-3;
+  }
+  .custom .str-chat__date-separator-date {
+    @apply text-white;
+  }
+  .stuck-bottom {
+    position: relative;
+  }
+}
+
+@screen sm {
+  .chat-user-avatar {
+    height: 51px;
+    width: 51px;
+  }
+  .custom .str-chat__textarea__textarea {
+    @apply text-2xl leading-7 py-8;
+  }
+}
+.tooltip {
+  @apply invisible absolute;
+}
+
+.has-tooltip:hover .tooltip {
+  @apply visible z-50;
+}
+.tooltip {
+  visibility: hidden;
+  position: absolute;
+}
+.has-tooltip:hover .tooltip {
+  visibility: visible;
+  z-index: 100;
+}
+
+@tailwind components;
+
+/* purgecss end ignore */
+@tailwind utilities;
+
+.ExampleStuckContent {
+  position: relative;
+  padding: 10px;
+}
